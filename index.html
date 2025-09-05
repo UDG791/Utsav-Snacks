@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Utsav Snacks Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <div id="landing" style="text-align:center; padding: 50px;">
+    <h1>Welcome to Utsav Snacks Shop</h1>
+    <p>This is a sample website</p>
+    <button onclick="showMainSite()" style="padding:12px 25px; font-size:18px; cursor:pointer; background-color:#6a82fb; color:white; border:none; border-radius:8px;">View Site</button>
+  </div>
+
+  <!-- Main Site Content -->
+  <div id="mainSite">
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Utsav Snacks Logo">
+        <h1>Utsav Snacks</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#snacks">Snacks</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Delicious Snacks, Fast Delivery 🚀</h2>
+      <p>Order your favorite biscuits, chocolates, chips, and drinks anywhere in Nepal.</p>
+    </section>
+
+    <!-- Snacks Section -->
+    <section id="snacks" class="products">
+      <h2>Our Snacks Collection</h2>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p>Total: Rs. <span id="total">0</span></p>
+      <button id="checkoutBtn">Checkout</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> utsavsnacks@gmail.com</p>
+        <p><strong>Phone:</strong> 9866955320</p>
+        <p><strong>Address:</strong> Ghorahi, Dang, Nepal</p>
+      </div>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Utsav Snacks Shop | Fast Delivery in Nepal 🇳🇵</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
